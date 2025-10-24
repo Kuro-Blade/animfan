@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+body {
+	background-color: #2a2a2a;
+	color: #FFFFFF;
+	padding: 5px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Segoe UI", Verdana, "sans-serif";
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	margin: 0;
+	z-index: 1000;
+}
+
+.index {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 1.2rem;
+	background-color: rgba(0, 0, 0, 0.25);
+	transition: background-color 0.3s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	margin: 0;
+	width: 1100px;
+	height: 40px;
+	padding: 0 5px 0 5px;
+	border-radius: 10px;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+.index:hover {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.index a {
+	display: inline-block;
+	margin: 0 10px 0 10px;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.index a:hover{
+	transform: scale(1.5);
+	color: #87CEFA;
+	text-shadow: 0 0 5px #87CEFA, 0 0 10px #87CEFA;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #1F1F1F;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	width: 1100px;
+	margin: 5px auto 0 auto;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #B0C4DE;
+}
+
+a:hover {
+	color: #87CEFA;
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 4rem;
+	text-align: center;
+	color: #F1700A;
+	text-shadow: 0 0 4px #FCDA10, 0 0 8px #FCDA10, 0 0 12px #FCDA10;
+}
+
+h2 {
+	font-family: Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 2.25rem;
+	text-align: center;
+	color: #FF8C00;
+	text-shadow: 2px 2px 2px black;
+}
+
+hr {
+	border: none;
+	width: 1050px;
+	height: 1px;
+	background-color: #333333;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	color: #FBC301;
+	text-shadow: 2px 2px 2px black;
+}
+
+ul {
+	list-style-type: circle;
+	margin: 0;
+	padding-left: 15px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px auto 0 auto;
+	padding: 0 5px 0 5px;
+	width: 1100px;
+	background-color: #1F1F1F;
+	color: #AAA;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	border: 2px solid #333333;
+	border-radius: 10px;
+}
+
+pre {
+	margin: 0;
+}
+
+.banner {
+	background-color: #1F1F1F;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	width: 1100px;
+	margin: 0 auto 5px auto;
+	padding: 5px;
+	border: 2px solid #333333;
+	border-radius: 10px;
+}
+
+.img-title {
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.list {
+	display: inline-block;
+	text-align: left;
+	word-break: break-word;
+}
+
+.update-line {
+	margin-top: 0.5rem;
+	font-size: 0.75rem;
+	color: #AAA;
+	font-style: italic;
+}
+
+/* ==================== INFOBULLE ====================*/
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1F1F1F;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 220px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.tooltip-container:hover .tooltip {
+  display: flex;
+}
+
+.tooltip-text {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  font-size: 0.9rem;
+  text-align: Left;
+}
+.tooltip-thumb00001 {
+  width: 200px;
+  height: 200px;
+  background-image: url("../assets/thumbs/00001.png"); /* remplace par ton image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
