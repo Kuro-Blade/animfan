@@ -1,0 +1,44 @@
+/* ==================== INFOBULLE ====================*/
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1F1F1F;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 220px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.tooltip-container:hover .tooltip {
+  display: flex;
+}
+
+.tooltip-text {
+	font-family: "Fira Mono", "monospace";
+  font-size: 0.9rem;
+  text-align: Left;
+}
+
+/*86.Eighty.Six*/
+.tooltip-thumb00001 {
+  width: 200px;
+  height: 200px;
+  background-image: url("../assets/thumbs/00001.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
