@@ -42,3 +42,14 @@
   border-radius: 4px;
   margin-bottom: 8px;
 }
+
+/*Rent-a-Girlfriend*/
+.tooltip-thumb00002 {
+  width: 200px;
+  height: 200px;
+  background-image: url("../assets/thumbs/00002.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
